@@ -1,0 +1,68 @@
+[
+  {
+    "name": "query",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "The search query used to find relevant articles"
+  },
+  {
+    "name": "k",
+    "type": "INTEGER",
+    "mode": "NULLABLE",
+    "description": "Number of top articles to retrieve"
+  },
+  {
+    "name": "timestamp",
+    "type": "TIMESTAMP",
+    "mode": "NULLABLE",
+    "description": "When the search was performed"
+  },
+  {
+    "name": "file",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Path to the source parquet file"
+  },
+  {
+    "name": "text_index",
+    "type": "INTEGER",
+    "mode": "NULLABLE",
+    "description": "Index of the text in the file"
+  },
+  {
+    "name": "score",
+    "type": "FLOAT",
+    "mode": "NULLABLE",
+    "description": "Relevance score of the article"
+  },
+  {
+    "name": "text",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Full text content of the article including title, description, provider, etc"
+  },
+  {
+    "name": "reasoning",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Explanation of why this article is relevant"
+  },
+  {
+    "name": "rank",
+    "type": "INTEGER",
+    "mode": "NULLABLE",
+    "description": "Ranking position of the article in the results"
+  },
+  {
+    "name": "title",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Title of the article"
+  },
+  {
+    "name": "publish_datetime",
+    "type": "TIMESTAMP",
+    "mode": "NULLABLE",
+    "description": "When the article was published"
+  }
+] 

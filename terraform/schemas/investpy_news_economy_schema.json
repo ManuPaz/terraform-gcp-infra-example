@@ -1,0 +1,11 @@
+[
+  {"name": "title", "type": "STRING", "mode": "NULLABLE"},
+  {"name": "description", "type": "STRING", "mode": "NULLABLE"},
+  {"name": "provider", "type": "STRING", "mode": "NULLABLE"},
+  {"name": "article_link", "type": "STRING", "mode": "NULLABLE"},
+  {"name": "text", "type": "STRING", "mode": "NULLABLE"},
+  {"name": "image_src", "type": "STRING", "mode": "NULLABLE"},
+  {"name": "publish_datetime", "type": "STRING", "mode": "NULLABLE"},
+  {"name": "publish_date", "type": "DATE", "mode": "NULLABLE"},
+  {"name": "publish_hour", "type": "INTEGER", "mode": "NULLABLE"}
+] 

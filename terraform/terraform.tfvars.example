@@ -1,0 +1,57 @@
+# GCP Project Configuration
+gcp_project_id = "your-project-id"
+gcp_region     = "europe-west1"
+gcp_zone       = "europe-west1-b"
+
+# Logs Exclusion Configuration
+# Add the names of your resources that you want to exclude from logs
+cloud_functions_names_exclusion = [
+  # "compute-engine-alert",  # Your new Cloud Function
+  # "another-function",
+  # "my-test-function"
+]
+
+cloud_run_names_exclusion = [
+  # "cloud_run_name1",  # Cloud Run service to exclude from logs
+]
+
+compute_engine_names_exclusion = [
+  # "my-compute-instance",
+  # "test-server"
+]
+
+cloud_run_jobs_names_exclusion = [
+  # "my-cloud-run-job",
+  # "batch-processing"
+]
+
+cloud_scheduler_names_exclusion = [
+  # "compute-engine-alert-scheduler",  # Your new scheduler
+  # "another-scheduler"
+]
+
+pubsub_subscription_names_exclusion = [
+  # "my-subscription",
+  # "notification-topic"
+]
+
+# Cloud Function Alert Configuration
+alert_email = "your-email@gmail.com"
+smtp_password = "your-gmail-app-password"  # Use Gmail App Password, not regular password
+
+# Optional: Customize alert settings
+alert_threshold_minutes = 30  # Alert if instance is running more than 30 minutes
+alert_schedule = "*/15 * * * *"  # Check every 15 minutes
+
+# Zones to monitor for Compute Engine instances
+compute_zones = [
+  "europe-west1-b",
+  "europe-west1-c"
+  # Add more zones if needed
+]
+
+# BigQuery Configuration
+bq_location = "europe-west1"   # Location for BigQuery resources (EU or US)
+bigquery_dataset_id = "my-example-dataset"  # ID of your BigQuery dataset
+bigquery_data_bucket = "my-data-bucket"  # GCS bucket containing BigQuery data
+bigquery_unstructured_bucket = "my-unstructured-bucket"  # GCS bucket containing unstructured data 

@@ -1,0 +1,56 @@
+[
+  {
+    "name": "date",
+    "type": "DATETIME",
+    "mode": "REQUIRED",
+    "description": "Date of the earnings report"
+  },
+  {
+    "name": "symbol",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Stock symbol"
+  },
+  {
+    "name": "eps",
+    "type": "FLOAT",
+    "mode": "NULLABLE",
+    "description": "Earnings per share"
+  },
+  {
+    "name": "epsEstimated",
+    "type": "FLOAT",
+    "mode": "NULLABLE",
+    "description": "Estimated earnings per share"
+  },
+  {
+    "name": "time",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Time of the earnings report"
+  },
+  {
+    "name": "revenue",
+    "type": "FLOAT",
+    "mode": "NULLABLE",
+    "description": "Revenue"
+  },
+  {
+    "name": "revenueEstimated",
+    "type": "FLOAT",
+    "mode": "NULLABLE",
+    "description": "Estimated revenue"
+  },
+  {
+    "name": "fiscalDateEnding",
+    "type": "DATETIME",
+    "mode": "NULLABLE",
+    "description": "Fiscal date ending"
+  },
+  {
+    "name": "updatedFromDate",
+    "type": "DATETIME",
+    "mode": "NULLABLE",
+    "description": "Date when the record was last updated"
+  }
+] 
