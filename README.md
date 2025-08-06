@@ -12,11 +12,7 @@ This repository contains a comprehensive example of Google Cloud Platform (GCP) 
 
 ### Firestore Database
 - **NoSQL Database**: Configures Firestore for document-based data storage
-- **Security Rules**: Implements proper access controls and security policies
-- **Indexing**: Optimized indexing for efficient queries
-- **Collections**: Users, Documents, and Prompts collections for document management
-- **User Isolation**: Secure user-based access control
-- **Document Management**: File storage integration with Google Cloud Storage
+- **Security Rules**: Implements proper access controls and security policies (initially it doesn't allow reading or writing)
 
 ### Logging and Monitoring
 - **Log Exclusions**: Configurable log exclusion rules for various GCP services
@@ -124,22 +120,12 @@ The infrastructure creates several external tables:
 
 The infrastructure sets up a Firestore database with the following structure:
 
-### Collections
-- **Users Collection**: Store user information and authentication data
-- **Documents Collection**: Manage document metadata and file references
-- **Prompts Collection**: Store user prompts and AI responses
-
 ### Security Features
-- **User Isolation**: Users can only access their own data
-- **Authentication Required**: All operations require Firebase Authentication
-- **Secure Rules**: Custom security rules with user-based access control
-- **Document References**: Secure file storage integration with Google Cloud Storage
+- **Secure Rules**: Custom security rules with user-based access control (initially it doesn't allow reading or writing)
 
 ### Database Configuration
 - **Type**: Native Firestore
 - **Location**: Same as project region
-- **Point-in-time Recovery**: Enabled
-- **Performance**: Optimized indexes for efficient queries
 
 ## 🔔 Alert System
 
