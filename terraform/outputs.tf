@@ -96,3 +96,20 @@ output "firestore_collections" {
     "prompts"
   ]
 } 
+
+# Cloud Storage Outputs
+output "cloud_storage_bucket_name" {
+  description = "Name of the Cloud Storage bucket for FMP backup data"
+  value       = google_storage_bucket.fmp_backup_bucket.name
+}
+
+output "cloud_storage_bucket_location" {
+  description = "Location of the Cloud Storage bucket"
+  value       = google_storage_bucket.fmp_backup_bucket.location
+}
+
+output "cloud_storage_bucket_url" {
+  description = "URL of the Cloud Storage bucket"
+  value       = "gs://${google_storage_bucket.fmp_backup_bucket.name}"
+} 
+

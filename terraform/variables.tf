@@ -104,3 +104,9 @@ variable "bigquery_unstructured_bucket" {
   description = "The GCS bucket containing unstructured BigQuery external table data"
   type        = string
 } 
+
+# Cloud Storage Configuration
+variable "cloud_storage_bucket_name" {
+  description = "The name of the Cloud Storage bucket for FMP backup data"
+  type        = string
+}
