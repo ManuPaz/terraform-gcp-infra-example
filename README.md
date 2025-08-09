@@ -10,6 +10,9 @@ This repository contains a comprehensive example of Google Cloud Platform (GCP) 
 - **Schema Management**: Includes predefined schemas for various data types
 - **Data Sources**: Supports multiple data formats (Parquet, JSON, CSV)
 
+### Cloud Storage
+- **Data Storage**: Configures Google Cloud Storage buckets for structured and unstructured data
+
 ### Firestore Database
 - **NoSQL Database**: Configures Firestore for document-based data storage
 - **Security Rules**: Implements proper access controls and security policies (initially it doesn't allow reading or writing)
@@ -35,6 +38,7 @@ This repository contains a comprehensive example of Google Cloud Platform (GCP) 
 │   ├── outputs.tf                 # Output values
 │   ├── bigquery_dataset.tf        # BigQuery dataset configuration
 │   ├── bigquery_external_tables.tf # External tables setup
+│   ├── cloud_storage.tf           # Cloud Storage bucket configuration
 │   ├── firestore.tf               # Firestore database configuration
 │   ├── cloud_functions.tf         # Cloud Functions deployment
 │   ├── logs_exclusions.tf         # Log exclusion rules
@@ -115,6 +119,15 @@ The infrastructure creates several external tables:
 - **Profiles DataFrame**: Company profile information
 - **Symbols Mapping**: Symbol mapping data
 - **Earnings Calendar**: Earnings calendar information
+
+## 🗄️ Cloud Storage
+
+The infrastructure configures Google Cloud Storage buckets to serve as the data storage backend:
+
+### Bucket Configuration
+- **Storage Class**: Standard storage class for good performance and cost-effectiveness
+- **Access Control**: Uniform bucket-level access control for simplified permissions management
+- **Regional Storage**: Buckets are configured in the same region as your GCP project for optimal performance
 
 ## 🔥 Firestore Database
 

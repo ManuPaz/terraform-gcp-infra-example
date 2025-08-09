@@ -55,3 +55,7 @@ bq_location = "europe-west1"   # Location for BigQuery resources (EU or US)
 bigquery_dataset_id = "my-example-dataset"  # ID of your BigQuery dataset
 bigquery_data_bucket = "my-data-bucket"  # GCS bucket containing BigQuery data
 bigquery_unstructured_bucket = "my-unstructured-bucket"  # GCS bucket containing unstructured data 
+
+
+# Cloud Storage Configuration
+cloud_storage_bucket_name = "bucket_name"  # Cloud Storage bucket name
